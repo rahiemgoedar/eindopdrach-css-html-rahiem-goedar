@@ -1,0 +1,186 @@
+body {
+    background-color:peru;
+}
+
+.container {
+    display: grid;
+    height: 1000px;
+    width: 400px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 100px auto 100px 50px;
+    grid-template-areas: 
+    "header header header header header header header header"
+    "content content content content content content content content"
+    "menu menu menu menu menu menu menu menu"
+    "footer footer footer footer footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    border: black dotted 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin: 2px;
+}
+
+.content {
+    grid-area: content;
+    text-align: center;
+    margin: 2px;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.footer {
+    grid-area: footer;
+    font-size: 10px;
+}
+
+.menu__list {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    text-align: flex-start;
+    width: 100%;
+    color: chocolate;
+    padding: 0px;
+}
+.menu__navbar a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px dotted brown;
+    color: rgb(70, 39, 9);
+}
+
+@media (min-width: 768px) {
+    
+        .container {
+        display: grid;
+        height: 1000px;
+        width: 768px;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 100px auto 100px 50px;
+        grid-template-areas: 
+        "menu header header header header header header header"
+        "menu content content content content content content content"
+        "menu content content content content content content content"
+        "footer footer footer footer footer footer footer footer";
+    }
+    
+    .header {
+        grid-area: header;
+        text-align: center;
+        border: black dotted 2px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        margin: 2px;
+        width: 768px
+    }
+    
+    .content {
+        grid-area: content;
+        text-align: center;
+        margin: 2px;
+        font-size: 20px;
+    }
+
+    .video {
+        width:768px;
+    }
+    
+    .menu {
+        grid-area: menu;
+    }
+    
+    .footer {
+        grid-area: footer;
+        font-size: 10px;
+    }
+    
+    .menu__list {
+        list-style-type: none;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        color: chocolate;
+        padding: 0px;
+        
+    }
+    .menu__navbar a {
+        text-decoration: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 20px;
+        border: 2px dotted brown;
+        color: rgb(70, 39, 9);
+    }
+    
+    
+    @media (min-width: 1024px) {
+        .container {
+            display: grid;
+            height: 1000px;
+            width: 1024px;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: 100px 100px auto 50px;
+            grid-template-areas: 
+            "header header header header header header header header"
+            "menu menu menu menu menu menu menu menu"
+            "content content content content content content content content"
+            "footer footer footer footer footer footer footer footer";
+        }
+        
+        .header {
+            grid-area: header;
+            text-align: center;
+            border: black dotted 2px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            margin: 2px;
+            width: 1024px
+        }
+        
+        .content {
+            grid-area: content;
+            text-align: center;
+            margin: 2px;
+            font-size: 19px;
+        }
+    
+        .video {
+            width:1024px;
+        }
+        
+        .menu {
+            grid-area: menu;
+        }
+        
+        .footer {
+            grid-area: footer;
+            font-size: 10px;
+        }
+        
+        .menu__list {
+            list-style-type: none;
+            display:flex;
+            flex-direction: row;
+            justify-content:space-between;
+            color: chocolate;
+            padding: 0px;
+            
+        }
+        .menu__navbar a {
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 20px;
+            border: 2px dotted brown;
+            color: rgb(70, 39, 9);
+        }
+        
+    }

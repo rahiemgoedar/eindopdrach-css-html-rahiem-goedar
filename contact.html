@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eindopdracht HTML & CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <header>
+                <h1>
+                    Contact
+                </h1>
+            </header>
+        </div>
+
+        <div class="content">
+            <main>
+                <div class="main"></div>
+
+                <form name="contact" method="POST" data-netlify="true">
+                  <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required />
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                  </div>
+                  <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" />
+                  </div>
+                  <div>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" min="1" max="130" step="5" />
+                  </div>
+                  <div>
+                    <label for="date">Birthdate</label>
+                    <input type="date" name="date" id="date" min="2019-06-10" />
+                  </div>
+                  <hr />
+          
+                  <div>
+                    Gender
+                    <div>
+                      <label for="male">Male</label>
+                      <input type="radio" name="gender" id="male" value="male" />
+                    </div>
+                    <div>
+                      <label for="female">Female</label>
+                      <input type="radio" name="gender" id="female" value="female" />
+                    </div>
+                  </div>
+                  <hr />
+                  <div>
+                    Choose rum
+                    <div>
+                      <label for="Nummer 1: Diplomatica Reserva">Nummer 1: Diplomatica Reserva</label>
+                      <input type="checkbox" name="Nummer 1: Diplomatica Reserva" id="Nummer 1: Diplomatica Reserva" />
+                    </div>
+                    <div>
+                      <label for="Nummer 2: El Ron de Zacapa">Nummer 2: El Ron de Zacapa</label>
+                      <input type="checkbox" name="Nummer 2: El Ron de Zacapa" id="Nummer 2: El Ron de Zacapa" />
+                    </div>
+                    <div>
+                      <label for="Nummer 3: Don Papa">Nummer 3: Don Papa</label>
+                      <input type="checkbox" name="Nummer 3: Don Papa" id="Nummer 3: Don Papa" />
+                    </div>
+                    <div>
+                      <label for="Nummer 4: Brugal 1888">Nummer 4: Brugal 1888</label>
+                      <input type="checkbox" name="Nummer 4: Brugal 1888" id="Nummer 4: Brugal 1888" />
+                    </div>
+                  </div>
+                  <hr />
+          
+                  <button type="reset">Reset</button>
+                  <button type="submit">Submit</button>
+                </form>
+            </main>
+        </div>
+        
+        <div class="menu">
+            <menu>
+                <ul class="menu__list">
+                    <li class="menu__navbar"><a href="index.html">Home</a></li>
+                    <li class="menu__navbar"><a href="favorites.html">Favorites</a></li>
+                    <li class="menu__navbar"><a href="about.html">About</a></li>
+                    <li class="menu__navbar"><a href="contact.html">Contact</a></li>
+                </ul>
+            </menu>
+        </div>
+     
+        <div class="footer">
+            <footer>
+                <h2>Copyright Rahiem Goedar 2021 - Rum</h2>
+            </footer>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
